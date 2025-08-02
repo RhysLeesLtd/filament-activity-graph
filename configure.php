@@ -119,7 +119,7 @@ confirm('Let this script delete itself?', true) && unlink(__FILE__);
 
 function ask(string $question, string $default = ''): string
 {
-    $consoleColor = new ConsoleColor();
+    $consoleColor = new ConsoleColor;
     $def = $default ? $consoleColor->apply('yellow', " ({$default})") : null;
     $answer = readline($consoleColor->apply('green', $question.$def.': '));
 
@@ -132,7 +132,7 @@ function ask(string $question, string $default = ''): string
 
 function confirm(string $question, bool $default = false): bool
 {
-    $consoleColor = new ConsoleColor();
+    $consoleColor = new ConsoleColor;
 
     $answer = ask($question, ($default ? 'Y/n' : 'y/N'));
 
