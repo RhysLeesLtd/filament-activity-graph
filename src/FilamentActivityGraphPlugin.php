@@ -1,15 +1,15 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace RhysLeesLtd\FilamentActivityGraph;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 
-class SkeletonPlugin implements Plugin
+class FilamentActivityGraphPlugin implements Plugin
 {
     public function getId(): string
     {
-        return 'skeleton';
+        return 'filament-activity-graph';
     }
 
     public function register(Panel $panel): void
